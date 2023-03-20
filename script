@@ -1,0 +1,84 @@
+Hello and welcome to this d2iq webinar in which we'll give you a taste of how you can leverage the power of the DKP platform to meet your kubernetes hybrid and multi-cloud use cases.
+
+I'm David Whitehouse, a principal solutions architect with Day 2 IQ
+
+Over the course of the next hour we 
+
+Challenges
+
+
+
+
+With a goal of maximizing flexibility and minimizing lock-in, IT teams are designing architectures that can
+span on-premises, private cloud, and multiple public cloud (AKA “hybrid and multi-cloud”) environments.
+The native capabilities of Kubernetes provide great baseline capabilities. However, Kubernetes
+management both within and across clouds and on-premises environments has the following challenges: 
+
+Code Modifications
+On-premises and public cloud Kubernetes ecosystems
+typically differ. As a result, code modifications are often
+required to adapt to the ecosystem.
+
+Clunky management
+Each environment typically has its own distinct
+Kubernetes controls. These inconsistencies
+make management across a hybrid or multi-cloud
+environment clunky at best. 
+
+Limited mobility
+Diverse ecosystems and management tools combine to
+restrict application and container consistency across
+platforms. As a result, mobility is limited. 
+
+On-Premises or Private Cloud
+D2iQ gives you everything you need to run production Kubernetes in hybrid and multi-cloud environments – both the
+right technology and the right expertise to implement that technology. D2iQ’s purpose-built automation provides fast
+implementation with flexible configuration in place of time-consuming customization.
+The diagram depicts a hybrid and multi-cloud Kubernetes implementation that spans on-premises and public cloud
+environments. A single management cluster supports multiple clusters across on-premises and multi-cloud environments. 
+
+D2iQ Kommander was architected to be infrastructure-agnostic. Kommander manages both infrastructure
+and applications across hybrid and multi-cloud environments. It does so by abstracting differences among
+environments and automating management processes.
+Kommander federates workloads and projects into a logical whole. So, the local Kubernetes cluster can be
+federated across multiple Amazon Web Services clusters. Alternatively, clusters could also be federated across
+a great number of supported public clouds. Kommander also works with any Kubernetes distribution (AWS, EKS,
+D2iQ, and more) without requiring modifications to the distribution.
+By providing a consistent management approach across federated Kubernetes clusters / workspaces, D2iQ
+provides workload portability, workload mobility, and efficient, automated management. These capabilities enforce
+a consistent approach across complex hybrid and multi-cloud environments. 
+
+
+BC-DR business continuity / disaster recovery
+
+Using multiple clouds is increasingly common in enterprise IT. But managing multi-cloud infrastructure can be daunting for IT ops. Extending the DevOps approach to multi-cloud environments can support and simplify application development, delivery and maintenance.
+
+Incorporating DevOps into a multi-cloud strategy might entail some compromises for DevOps traditionalists. But such compromises aren't necessarily a bad thing. After all, the DevOps process can greatly democratize development and maintenance work in multi-cloud environments and help organizations build competitive advantage.
+
+1. Implement a cloud management platform and self-service cloud brokerage
+IT teams need a standardized toolset to manage and automate application deployment, scaling and monitoring across multiple clouds. Centralizing management and provisioning of all cloud services is integral to achieving this goal.
+
+Self-service tools to implement and provision cloud services for application development are crucial when extending DevOps to a multi-cloud context. A well-crafted cloud brokerage includes detailed service catalog descriptions of each available cloud service, its dependencies and its pricing. This benefits both the service desk by relieving them of extra burden and developers by helping them work efficiently across environments.
+
+The mark of a mature self-service cloud brokerage is automated cloud cost optimization, which keeps developers within budget and alerts them to lower-cost cloud service options. The brokerage should also deduct cloud spending from a preset project budget.
+
+The chart displays data on cloud adoption across organizations, with 84% reporting a multi-cloud strategy.
+As more organizations adopt multi-cloud and hybrid cloud strategies, IT teams are seeking ways to manage the complexity.
+2. Create a centralized code repository
+Create a centralized repository of infrastructure as code and application code with version control and collaboration tools, whether as part of an all-in-one DevOps platform or as a standalone tool that can integrate into CI/CD pipelines. Establishing this type of repository facilitates teamwork and code sharing across IT teams and cloud environments.
+
+3. Commit to containers
+While some organizations are already running software on containers, moving to a multi-cloud environment means it's time to commit to them.
+
+Help developers adjust to containerized environments with these tips:
+
+Train developers in container development best practices.
+Develop a container playbook and related documentation that details how the organization creates and tests containers. Include policies about procuring third-party or open-source containers and scanning them for security vulnerabilities.
+Establish a secure container repository accessible to only authorized developers as well as QA and systems administrators.
+4. Standardize on a cloud-agnostic approach to development
+In a multi-cloud environment, IT teams might be tempted to stick with the features of each cloud service provider (CSP). However, building a multi-cloud infrastructure should take a cloud-agnostic approach to infrastructure and application design so that IT teams can use the same DevOps processes and code across CSPs.
+
+5. Integrate DevOps thinking into a multi-cloud strategy
+Extend the DevOps mindset to a multi-cloud environment by prioritizing agility, performance and automation.
+
+Practice cloud arbitrage -- shifting workloads between CSPs -- to optimize multi-cloud infrastructure by taking advantage of higher availability, lower latency and negotiated discounts that keep applications compliant with customer service-level agreements. Maximize specific CSPs for applications by region and country to optimize workloads and reduce latency.
