@@ -1,16 +1,46 @@
-Hello and welcome to this d2iq webinar in which we'll give you a taste of how you can leverage the power of the DKP platform to meet your kubernetes hybrid and multi-cloud use cases.
+Hello and welcome to this d2iq webinar covering the strategy and management of hybrid and multi-cloud kubernetes at scale. 
 
-I'm David Whitehouse, a principal solutions architect with Day 2 IQ
+Firstly - Thanks for joining. Toady I'm give you an overview of how you can leverage the power of the DKP platform to meet your kubernetes hybrid and multi-cloud use cases.
 
-Over the course of the next hour we 
+I'm David Whitehouse, a principal solutions architect with Day 2 IQ, based in the UK and I cover professional services for the majority of our customers in the EMEA region.
 
-Challenges
+Today we'll look at how we can federate our workloads accross multiple clusters in order to ensure maximum flexibility whilst delivering optimal resilience and business continuity.
+
+First we'll address the elephant in the room..... We'll take a look at why we'd actually want to add the additonal complexity of spreading our clusters accross a range of infrastructure 
+.... and how we can mitigate the complexity almost entirely by using a single management plane to manage the full lifecycle of those clusters from a single point of contact. 
+
+Not only that, we'll also discover how we can carve out our kubernetes estate to accomodate multiple distinct environments. We'll do that using the platform heirarchy defined by DKP workspaces
+and projects to give the ease of management in our operations, ultimate flexibility to our developers all whilst driving down both risk and cost.
+
+Once we've covered those high level principles we'll go straight into a practical demonstration, starting from scratch and ending up with a kubernetes fleet that spans multiple
+cloud providers
+
+We've got plenty to cover so let's get started!
+
+------------------------
+
+That completes today's session on multi-cloud and hybrid deployments. I hope you found it enjoyable and got something from it. 
+
+We covered the why and how of multi-cloud / hybrid and built out a full insfrastructure which allowed us to declaratively build and manage clusters of
+multiple types, shapes and sizes in a fully declaritive and repeatable manner using DKP enterprise.
+
+If you wnat to learn more about the platform and perhaps get a more focussed, obligation free demo then please don't hesitazte to reach out at d2iq.com.
+We'd love to chat.
+
+For now though, take care and thanks for watching!
 
 
 
 
-With a goal of maximizing flexibility and minimizing lock-in, IT teams are designing architectures that can
-span on-premises, private cloud, and multiple public cloud (AKA “hybrid and multi-cloud”) environments.
+
+
+
+some of the theoretical challenges  how we can build out our management platform and from there spring out multiple workload clusters
+
+
+
+
+With a goal of maximizing flexibility and minimizing lock-in, IT teams are designing architectures
 The native capabilities of Kubernetes provide great baseline capabilities. However, Kubernetes
 management both within and across clouds and on-premises environments has the following challenges: 
 
