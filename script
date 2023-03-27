@@ -31,13 +31,9 @@ For now though, take care and thanks for watching!
 
 
 
+------
 
-
-
-
-some of the theoretical challenges  how we can build out our management platform and from there spring out multiple workload clusters
-
-
+Let's talk a little about our 
 
 
 With a goal of maximizing flexibility and minimizing lock-in, IT teams are designing architectures
@@ -80,6 +76,8 @@ a consistent approach across complex hybrid and multi-cloud environments.
 
 
 BC-DR business continuity / disaster recovery
+
+
 
 Using multiple clouds is increasingly common in enterprise IT. But managing multi-cloud infrastructure can be daunting for IT ops. Extending the DevOps approach to multi-cloud environments can support and simplify application development, delivery and maintenance.
 
