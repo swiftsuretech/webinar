@@ -12,10 +12,6 @@ dkp update bootstrap credentials aws
 dkp create cluster aws --cluster-name=multi-cloud-demo \
 --additional-tags=owner=dswhitehouse \
 --additional-tags=expiration=5d \
---region=us-east-1 \
---with-aws-bootstrap-credentials=true \
---dry-run \
---output=yaml > test.yaml
-
+--region=us-east-1
 
 dkp install kommander
