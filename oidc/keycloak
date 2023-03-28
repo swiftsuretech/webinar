@@ -1,0 +1,109 @@
+# Keycloak OIDC + Kommander Setup
+
+## Requirements
+* Running DKP Enterprise
+* Running Keycloak
+
+## Setup Keycloak Realm + Client
+1. Login at Keycloak as admin
+
+2. Create realm
+
+3. Switch realm to new created
+
+4. Select `Client Scopes`
+
+5. Add client scope
+* Name: groups
+* Type: Default
+* Display on consent screen: On
+* Include in token scope: On
+
+6. Click on created client scope -> Mappers
+
+7. Create Mapper
+* Mapper Type: Group Membership
+* Name: Groups Mapper
+* Token Claim Name: groups
+* Full group path: Off
+* Add to ID token: On
+* Add to access token: On
+* Add to userinfo: On
+
+8. Go to `Clients`
+
+9. Create Client
+* Client type: OpenID Connect
+* Client ID: Name / Url / ID
+* Client Authentication: On
+* Authentication Flow:
+  * Standard flow: On
+  * Implicit flow: On
+  * Direct grant access: On
+  * Service account roles: On
+* Root url: https://<Kommander URL>
+* Home url: https://<Kommander URL>
+* Valid redirect url: https://<Kommander URL>/dex/callback
+
+10. Switch to `client scopes` of the client -> Add client scope
+* Select `groups``
+* Type: Default
+
+11. Switch to `Credentials` and copy `Client secret``
+
+12. Switch to `Groups` -> Add Groups:
+* Add 2 groups:
+  * Name: dkp-admins
+  * Name: dkp-users
+
+13. Switch to `Users` -> Add User:
+* Add user1
+  * Name: user1
+  * First Name: Normal
+  * Last Name: User
+  * Email: user1@domain.com
+  * Password: random
+  * Groups:
+    * dkp-users
+* Add admin1
+  * Name: admin1
+  * First Name: Admin
+  * Last Name: User
+  * Email: admin1@domain.com
+  * Password: random2
+  * Groups:
+    * dkp-users
+    * dkp-admins
+
+## Setup Kommander Identity Provider
+1. Login to DKP Enterprise
+
+2. Go to `Identity Providers` -> Add Identity Provider
+* Type: OIDC
+* Name: Keycloak
+* Client ID: <Keycloak client id>
+* Client Secret: <Keycloak client secret>
+* Issuer: https://<Keycloak URL>/auth/realms/<Realm name>
+* Insecure Enable Groups: On
+* Get User Info: On
+
+3. Go to `Identity Providers` -> `Groups` -> Create Group
+* dkp-users
+  * Name: dkp-users
+  * Identity Provider Group: `oidc:dkp-users`
+* dkp-users
+  * Name: dkp-admins
+  * Identity Provider Group: `oidc:dkp-admins`
+
+4. Go to `Access Control` -> `Cluster Role Bindings` -> Edit Groups 
+* dkp-users:
+  * Roles:
+    * `View Role`
+    * dkp-kommander-view
+* dkp-admins:
+  * Roles:
+    * `Cluster Admin role`
+    * `Admin role`
+    * dkp-kommander-admin
+
+## Test it!
